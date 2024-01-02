@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{font-family: Arial, Helvetica, sans-serif; }
+
+        header{
+            background: rgba(160, 11, 218, 0.564);
+            padding-inline: 16px;
+        }
+
+        nav{
+            max-width: 1280px;
+            height: 70px;
+            margin-inline: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hamburger{
+            display: none;
+            border: none;
+            background: none;
+            border-top: 3.5px solid rgb(240, 7, 7);
+            cursor: pointer;
+        }
+
+        .hamburger::before, .hamburger::after{
+            content: " ";
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: green;
+            margin-top: 5px;
+        }
+        .hamburger::before{background: turquoise;}
+
+        .nav-list{
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-list a{
+            font-size: 18px;
+            padding-block: 16px;
+        }
+        
+        a{text-decoration: none;}
+
+        .a1{color: rgb(1, 43, 255);}
+        .a2{color: rgb(162, 0, 255);}
+        .a3{color: rgba(255, 0, 0, 0.658);}
+        .a4{color: rgba(204, 255, 0, 0.868);}
+        
+        main{
+            height: calc(100vh - 70px);
+            background: center / cover no-repeat black;
+            text-align: center;
+            padding: 10px;
+
+        }
+       
+        .home{color: rgb(0, 194, 247);}
+
+        @media (max-width: 750px) {
+            .hamburger{display: block;}    
+        }
+        
+
+
+    </style>
+    <script defer>
+        
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Logo</h1>
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a class="a1" href="#">Link</a></li>
+                <li><a class="a2" href="#">Link</a></li>
+                <li><a class="a3" href="#">Link</a></li>
+                <li><a class="a4" href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <a class="home" href="indx.html">Inicil</a></main>
+
+
+    
+</body>
+</html>
